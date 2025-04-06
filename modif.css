@@ -1,0 +1,182 @@
+*,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+    padding: 0px;
+}
+.pembungkus_h1_dan_bot{
+    display: flex;
+}
+.tempat_h1{
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    z-index: 2;
+    position: absolute;
+    height: 13.5%;
+   
+}
+.tempat_gambar_bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.bot{
+    width: 100px;
+    height: auto;
+    border: 5px solid rgba(24, 24, 225, 0.779);
+    border-radius: 50%;
+}
+.h1_1,.h1_0{
+    background-color: rgb(156, 156, 115);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 10px;
+}
+.div1{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+.h11{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gambar_lawan{
+    width: 120px;
+}
+.div2{
+    /* background-color:aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.batu,.gunting,.kertas{
+    width: 170px;
+    margin: 15px;
+    margin-top: 190px;
+    filter: contrast(70%);
+    cursor: pointer;
+}
+.batu_kosong{
+    margin-top: 150px;
+    filter: contrast(100%);
+}
+.tempat_gambar1,.tempat_gambar2,.tempat_gambar3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(27, 145, 235);
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(24, 24, 225, 0.779);
+    border-radius: 50%;
+}
+.bot_level{
+    width: 200px;
+}
+.tulisan_bawah{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tulisan_bawah1,.tulisan_bawah2,.tulisan_bawah3{
+    margin-left: 70px;
+    margin-right: 70px;
+    
+   
+}
+.batu:hover,.gunting:hover,.kertas:hover{
+    filter: contrast(120%);  
+ }
+.h1_1:hover,.h1_0:hover{
+    background-color: rgb(194, 194, 132);
+    cursor: pointer;
+}
+.tempat_gambar1:hover,.tempat_gambar2:hover,.tempat_gambar3:hover{
+    background-color: rgb(16, 94, 153);
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    transition: 1s ease-in-out;
+}
+@media only screen and (max-width:1000px) {
+   .h1_0,.h1_1{
+       font-size: 20px;
+   }
+   .bot_level{
+        width: 150px;
+   }
+   .tempat_gambar1,.tempat_gambar2,.tempat_gambar3{
+        height: 150px;
+        width: 150px;
+   }
+   .tulisan_bawah1,.tulisan_bawah2,.tulisan_bawah3{
+    font-size: 25px;
+   }
+}
+@media only screen and (max-width:365px){
+    .h1_0,.h1_1{
+        font-size: 14px;
+    }
+    .tempat_h1{
+        display: list-item;
+    }
+    .h11{
+        font-size: 20px;
+    }
+    .bot_level{
+        width: 70px;
+   }
+    .tempat_gambar1,.tempat_gambar2,.tempat_gambar3{
+        height: 20px;
+        width: 20px;
+        margin: 1px;
+   }
+   .tulisan_bawah1,.tulisan_bawah2,.tulisan_bawah3{
+        font-size: 10px;
+        margin-left: 27px;
+        margin-right: 27px;
+   }
+   .div2{
+        margin-top: 200px;
+
+   }
+   .pembungkus_h1_dan_bot{
+    margin-top: 20px;
+   }
+   .tempat_gambar1:hover,.tempat_gambar2:hover,.tempat_gambar3:hover{
+        width: 30px;
+        height: 30px;
+        transition: 0.5s ease-in-out;
+   }
+   .batu,.gunting,.kertas{
+        width: 100px;
+        margin: 100px;
+        margin: 5px;
+        margin-top: 170px;
+    }
+    .batu_kosong{
+        margin-top: 0;
+    }
+}

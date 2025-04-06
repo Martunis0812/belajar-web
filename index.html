@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batu,gunting,kertas</title>
+    <link rel="stylesheet" href="modif.css">
+</head>
+
+<body>
+<div class="pembungkus_h1_dan_bot">
+    <div class="tempat_h1">
+        <h1 class="h1_1" onclick="klickHome()">Home</h1>
+        <h1 class="h1_0" onclick="mainLagi()">Main lagi</h1>
+    </div>
+    <div class="tempat_gambar_bot">
+        <img class="bot" src="img/bot1.png" alt="">
+    </div>
+</div>
+    <div class="div1">
+        <h1 class="h11">Pilih lawan anda!</h1>
+        <img class="gambar_lawan" src="img/batu_balik.png" alt="">
+    </div>
+    <div class="div2">
+        <div class="tempat_gambar1" onmouseout="mouseKeluar()">
+            <img class="bot_level" onclick="pemula()" src="img/robot1-removebg-preview.png" alt="">
+        </div>
+        <div class="tempat_gambar2" onmouseout="mouseKeluar()">
+            <img class="bot_level" onclick="ahli()" src="img/robot2-removebg-preview.png" alt="">
+
+        </div>
+        <div class="tempat_gambar3" onmouseout="mouseKeluar()">
+            <img class="bot_level" onclick="master()" src="img/robot3-removebg-preview.png" alt="">
+
+        </div>
+    </div>
+    <div class="tulisan_bawah">
+        <h1 class="tulisan_bawah1">LEVEL PEMULA</h1>
+        <h1 class="tulisan_bawah2">LEVEL AHLI</h1>
+        <h1 class="tulisan_bawah3">LEVEL MASTER</h1>
+    </div>
+    <div class="div3">
+        <img class="batu_kosong" src="img/batu.png" alt="">
+
+        <img class="batu" onclick="pogramPemula(); pogramAhli();pogramMaster(); pilihBatu();"
+            src="img/batu.png" alt="">
+
+        <img class="gunting" onclick="pogramPemula(); pogramAhli(); pogramMaster(); pilihGunting();"
+            src="img/gunting.png" alt="">
+
+        <img class="kertas" onclick="pogramPemula(); pogramAhli(); pogramMaster(); pilihKertas()"
+            src="img/kertas.png" alt="">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
