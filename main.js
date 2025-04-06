@@ -88,6 +88,7 @@ function master() {
 }
 
 function pogramPemula() {
+     acak = (Math.random() * 3 | 0) + 1;
     if (arah == 1) {
         console.log(acak)
         if (acak == 1) {
@@ -119,6 +120,7 @@ function pogramPemula() {
     }
 }
 function pogramAhli() {
+     acak = (Math.random() * 3 | 0) + 1;
     if (arah == 2) {
         console.log(acak)
         if (acak == 1) {
@@ -150,6 +152,7 @@ function pogramAhli() {
     }
 }
 function pogramMaster() {
+    acak = (Math.random() * 3 | 0) + 1;
     if (arah == 3) {
         console.log('pogramMaster')
         gambar_lawan.style.display = 'block'
@@ -226,7 +229,8 @@ function klickHome() {
     location.reload()
 }
 function mainLagi() {
-
+    acak = (Math.random() * 3 | 0) + 1;
+    
     h11.textContent = 'Ayo Pilih!';
     h1_0.style.display = 'none';
     gambar_lawan.style.display = 'none';
